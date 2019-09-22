@@ -13,7 +13,13 @@ class MainActivity : AppCompatActivity() {
 
         btnGo.setOnClickListener {
 
+            var Nombre:String = txtNombre.text.toString()
+            var Apellido:String = txtApellido.text.toString()
+
             val intent:Intent = Intent(this, Main2Activity::class.java)
+
+            intent.putExtra("Nombre", Nombre)
+            intent.putExtra("Apellido", Apellido)
 
             startActivity(intent)
             finish()
