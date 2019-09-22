@@ -15,11 +15,15 @@ class MainActivity : AppCompatActivity() {
 
             var Nombre:String = txtNombre.text.toString()
             var Apellido:String = txtApellido.text.toString()
+            var Telefono:String = txtTelefono.text.toString()
+            var Correo:String = txtCorreo.text.toString()
 
             val intent:Intent = Intent(this, Main2Activity::class.java)
 
             intent.putExtra("Nombre", Nombre)
             intent.putExtra("Apellido", Apellido)
+            intent.putExtra("Telefono", Telefono)
+            intent.putExtra("Correo", Correo)
 
             startActivity(intent)
             finish()

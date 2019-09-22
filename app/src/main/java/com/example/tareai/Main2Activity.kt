@@ -7,6 +7,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_segunda_actividad.*
 import kotlinx.android.synthetic.main.activity_segunda_actividad.txtApellido
 import kotlinx.android.synthetic.main.activity_segunda_actividad.txtNombre
+import kotlinx.android.synthetic.main.activity_segunda_actividad.txtTelefono
+import kotlinx.android.synthetic.main.activity_segunda_actividad.txtCorreo
 
 class Main2Activity : AppCompatActivity() {
 
@@ -18,9 +20,15 @@ class Main2Activity : AppCompatActivity() {
 
         var Nombre = objetoIntent.getStringExtra("Nombre")
         var Apellido = objetoIntent.getStringExtra("Apellido")
+        var Telefono = objetoIntent.getStringExtra("Telefono")
+        var Correo = objetoIntent.getStringExtra("Correo")
 
-        txtNombre.text = "$Nombre"
-        txtApellido.text = "$Apellido"
+        txtNombre.text = Nombre
+        txtApellido.text = Apellido
+        txtTelefono.text = Telefono
+        txtCorreo.text = Correo
+
+
 
 
     }
