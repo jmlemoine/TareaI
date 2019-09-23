@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
             var Telefono:String = txtTelefono.text.toString()
             var Correo:String = txtCorreo.text.toString()
             var Fecha:String = txtFecha.text.toString()
+            var Edad:String = txtEdad.text.toString()
 
             val intent:Intent = Intent(this, Main2Activity::class.java)
 
@@ -25,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("Apellido", Apellido)
             intent.putExtra("Telefono", Telefono)
             intent.putExtra("Correo", Correo)
+            intent.putExtra("Fecha", Fecha)
+            intent.putExtra("Edad", Edad)
 
             startActivity(intent)
             finish()
