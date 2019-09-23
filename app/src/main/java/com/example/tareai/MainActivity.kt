@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
             var Apellido:String = txtApellido.text.toString()
             var Telefono:String = txtTelefono.text.toString()
             var Correo:String = txtCorreo.text.toString()
+            var Fecha:String = txtFecha.text.toString()
 
             val intent:Intent = Intent(this, Main2Activity::class.java)
 
